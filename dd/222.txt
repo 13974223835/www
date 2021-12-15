@@ -1,0 +1,26 @@
+这个域名用于加速github.com域名，有时候你们无法在中国访问github.com，所有有了公司这个域名github.118899.net
+
+github官方域名克隆：
+现在我们用github.com clone一个仓库，可以看到github.com clone是很慢的设置有时候会timeout
+
+代理克隆：
+现在用公司的代理github.118899.net clone
+现在报错：fatal: unable to access 'https://github.118899.net/13974223835/liuliu.git/': SSL certificate problem: self signed certificate（表示git命令不允许没有CA认证的自签名证书，因为github.118899.net是公司自签名证书，没有经过第三方CA机构认证，所以报错，解决办法如下：）
+解决自签名证书问题：git config --global http.sslVerify false（表示让git命令跳过ssl验证）
+可以看到我们现在checkout和push github代码都很快了
+
+
+明白吗？
+
+
+
+
+
+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
+
+
+   git remote add origin https://github.com/13974223835/www.git
+
+
+
+
