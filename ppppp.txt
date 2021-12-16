@@ -1,0 +1,51 @@
+github ——上传本地代码到github仓库
+  	拥有github账号和下载git（后面通过git base here命令行形式上传到github仓库）
+
+	创建本地git仓库，在新建的文件夹里右键git base here输入$ ssh-keygen -t rsa -C "xxx@xxx.com"
+		最后出现  .ssh的文件，打开id_rsa.pub文件  把加密字符负责到github的SSH加密里
+		测试ss连接 $ ssh -T git@github.com
+
+	创建github仓库（可以随便创建）创建完可以得HTTPS和SSH
+		
+	在新建文件夹里右键git base here 输入git init  给github管理（会多出 .git文件）输入$ git status查看状态
+		把需要上传到github仓库的文件加到刚创建的文件夹中$ git add .
+		提交到本地仓库：$ git commit -m 'first commit'
+		提交到github仓库 $ git remote add origin https://github.com/xxxxxx.git 
+		推送到github仓库 $ git push -u origin master（第二次可以不用加-u）
+		注：创建仓库有勾选Initialize this repository with a README，最后一步会出错 
+			先输入$ git pull --rebase origin master在输入$ git push -u origin master
+		
+		
+	
+	$ ssh-keygen -t rsa -C "xxx@xxx.com"
+	$ ssh -T git@github.com
+	$ mkdir githubdemo
+	$ cd githubdemo/
+	$ git init
+	$ git status
+	$ git add .
+	$ git commit -m 'first commit'
+	$ git remote add origin https://github.com/xxxxxx.git
+	$ git push -u origin master
+	
+
+问题集合
+	在克隆下来的根目录上 上传新代码 是上传不成功的 要点进去上传操作上传
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
