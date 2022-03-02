@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>类型转换-string</title>
+		<script>
+		/* 
+		 强制类型转换指将一个数据类型转换为其他类型数据
+		 转换string：
+		 方法一：
+		 转换类型，tostring()方法
+		 方法不会改变原变量
+		 null和undefined没有tostring()方法，使用会报错
+		 方法二：
+		 调用Sring()函数，并将被转换的数据作为参数传给函数
+		 使用String()强制转换时候
+		 会将null和undefined转换为字符串"null","undefined"
+		 */
+		
+		var a= 222;
+		var b = a.toString();
+		//var c=null;   //toString()，会报错
+		//var v=undefined;  //toString()，会报错
+		
+		console.log(a)
+		console.log(b)
+		console.log(typeof a)
+		console.log(typeof b)
+		
+		/* var b=c.toString();//toString()，会报错
+		var b=v.toString();//toString()，会报错 */
+		console.log("+++++++++++++  调用string()函数 ++++++++++++++")
+		
+		a=String(a);
+		console.log(typeof a);
+		console.log(a)
+		
+		
+		
+		
+	console.log("+++++++  a=null;时候 +++++++++++++")
+	
+	
+		a=null;
+		a=String(a);
+		console.log(typeof a);
+		console.log(a)  //"null"
+		
+		
+		
+		
+	console.log("+++++++ a=undefined;时候 +++++++++++++")
+		a=undefined;
+		a=String(a);
+		console.log(typeof a);
+		console.log(a)   //"undefined"
+		
+		
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

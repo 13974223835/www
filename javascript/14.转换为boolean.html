@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>boolean转换</title>
+		<script>
+		/* 其他类型转换为boolean类型
+		调用Boolean()函数		  
+		1.数字-》布尔
+		   除了0，其他都是true
+		2.字符串——》布尔
+		   除了空串，其他是true
+		3.null和undefined都会转换为false   
+		 */
+	
+     var a =1123;//true
+	  // a =-123;//true
+	  // a =0;//false
+	 
+	  a ="1123";//true
+	 // var a =""; //false
+	 var a =null;//false
+	 // var a =undefined;//false
+	  // a=Boolean(a);
+	 
+	console.log(typeof a);
+	console.log(a);		  
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
