@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script>
+		/* 
+		 \r\n是输出的HTML代码换行，客户看到的效果没有换行。		 
+		 如果是输出给浏览器，就用<br/>	
+			  
+		 while 语句：
+		 1.
+		 while(条件表达式){
+			 语句
+		 }
+		 
+		 2.
+		 do{
+			 语句
+		 }while(条件表达式)
+		 先执行再判断
+		 */
+		
+		var a=1;
+		//如果是输出给浏览器换行，就用<br/>				
+		document.write(a+"<br />")
+		
+		// 条件表达式为true，为死循环，慎用!!!!!
+		// 循环不会停止
+		// while(true){
+		// 	alert(a++)
+		// 	//可以加条件到达停止的目的
+		// 	if(a==10){
+		// 		break;
+		// 	}
+		// }
+		
+		
+		var i=1;
+		do{
+			document.write(i++ +"<br />")
+		}while(i<10)
+		
+		
+		
+		
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

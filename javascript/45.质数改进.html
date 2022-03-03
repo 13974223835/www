@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script>
+		/* 优化质数的效率
+		
+		开根号函数：
+		
+		Math.sqrt()，
+		
+		25
+		1 25 
+		5 5
+		
+		 */
+		
+		console.time("time")
+		
+		
+		for(var a=2; a<=100;a++){
+			var flag=true;
+			// for(var j=2;j<a;j++){							
+			for(var j=2;j<Math.sqrt(a);j++){	
+				
+				if(a%j == 0){
+					//能被整除，代表a不是质数，不再进行内部循环
+					flag=false;
+					break;//加入可以提高性能
+					
+				}
+				if(flag){
+					console.log("质数是="+a)}
+			}
+			
+			
+		
+			
+		}
+		
+		console.timeEnd("time")
+		
+		
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

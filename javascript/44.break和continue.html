@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script>
+		/* 
+		 break,可以退出switch语句或循环语句
+		 if中不能使用break和continue
+		 
+		 break退出循环，不在继续（只只针对最近的循环）
+		 continue可以跳过当次循环（只只针对最近的循环）
+		 */
+		console.time("test")//记录时间开始
+		// for(var a=1 ;a<5;a++){
+			
+		// 	//break,针对的是for循环
+		// 	if(a==2){continue;}
+		// 	console.log(a)
+			
+		// }
+		
+		// break退出循环，不在继续（只只针对最近的循环）
+		// for(var i=1;i<5;i++){
+		// 	console.log("外部循环"+i)
+		// 	for(var j=1;j<5;j++){
+		// 		break;
+		// 		console.log("内部循环"+j)
+		// 	}
+		// }
+		
+		for(var i=1;i<10;i++){
+			
+			if(i==5){
+				break;
+			}
+			console.log("i="+i)
+		}
+		
+		console.timeEnd("test")//记录时间结束
+		
+		 </script>
+	</head>
+	<body>
+	</body>
+</html>
