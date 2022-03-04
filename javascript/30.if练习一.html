@@ -18,7 +18,10 @@
 		 
 		var score =prompt("输入成绩");
 		 
-		 if(score>=100){
+		 if(score >100 || score<0  ||isNaN(score)){
+			 alert("你写的啥？？")
+		 }else{
+			 if(score==100){
 			 alert("奖励一辆BMW")
 			}else if(80<=score && score<=99){
 			alert("奖励一台iphone15s")
@@ -27,6 +30,10 @@
 			}else{
 			alert("什么奖励也没有")	
 			} 
+		 }
+		 
+		 
+		 
 		 
 		 
 		 

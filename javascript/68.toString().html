@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script>
+		/* 
+		 创建函数
+		 */
+		function Parson(name,age,gender){
+			this.name=name;
+			this.age=age;
+			this.gender=gender;			
+		}
+		//实例对象
+		var per =new Parson("!!!",11,"nan");
+		//当我们在页面打印一个对象时候，其实是输出对象toString()
+		//当我们直接在页面中打印一个对象时，事件上是输出的对象的tostring()方法的返回值
+		
+		//console.log(per)
+		//如果我们希望在输出对象时不输出[object Object]，可以为对象添加一个toString()方法
+		// per.toString=function(){
+		// 	return Person["name="+this.name+",age="+this.age+",gender="+this.gender]
+		// }
+		//现在不能对toString重写了，会报错
+		
+		
+		
+		var result=per.toString()		
+		console.log("result="+result)
+		
+	//console.log(per.__proto__.__proto__.hasOwnProperty("toString"))//查询tostring位置
+				
+				
+				
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

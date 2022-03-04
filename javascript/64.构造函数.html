@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script>
+		/* 
+		 使用工厂创建对象时候，类型都是object，不看名字无法区分
+		 		 
+		 创建一个构造函数，专门用来Person对象
+		 构造函数和普通函数没有区别
+		 不同是，构造函数习惯首字母大写
+		 
+		 构造函数和普通函数调用方式不同
+		  普通函数直接调用，构造函数需要new关键字调用
+		 */
+		
+		/* 
+		 构造函数的执行流程:
+		 1.立刻创建一个新的对象
+		 2.将新建的对象设置为函数中this,在构造函数中可以使用this来引用新建的对象
+		 3.逐行执行函数中的代码
+		 4.将新建的对象作为返回值返回
+		 
+		 
+		 使用同一个构造函数创建的对象，
+		 我们称为一类对象，也将一个构造函数称为一个类我们将通过一个构造函数创建的对象，
+		 称为是该类的实例
+		 
+		 
+		 this的情况:
+		 1.当以函数的形式调用时，this是window
+		 2.当以方法的形式调用时，谁调用方法this就是谁
+		 3.当以构造函数的形式调用时，this就是新创建的那个对象
+		 
+		 */
+		function Parson(name,age,gender){
+			this.name=name;
+			this.age=age;
+			this.gender=gender;
+			this.sayName=function(){
+				alert(this.name)
+			}
+		}
+		
+		function Dog(){
+			
+		}
+		
+		var per=new Parson("nb",11,"nan");
+		var dog=new Dog();
+		
+		console.log(per)
+		console.log(dog)
+		
+		/* 
+		 使用instanceof可以检查一个对象是否是一个类的实例语法:
+		 对象 instanceof 构造函数
+		 如果是，则返回true，否则返回false
+		 */
+		
+		console.log(per instanceof Parson)//true
+		
+		console.log(per instanceof Object)//任何对象都是object后代
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

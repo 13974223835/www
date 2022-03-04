@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script>
+		/* 
+		 
+		 */
+		
+		var name="全局name"
+		//创建函数
+		function fun(){
+			console.log(this.name)
+		}
+		
+		
+		//创建两个对象
+		var obj={name:"111",
+		         sayName:fun
+				 };
+		
+		var obj2={name:"222",
+		          sayName:fun  
+				};
+		
+		fun();//以函数调用
+		
+		obj.sayName()//以object调用
+		obj2.sayName()
+		
+		
+		
+		
+		</script>
+		
+		
+	</head>
+	<body>
+	</body>
+</html>

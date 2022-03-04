@@ -17,14 +17,22 @@
 		var rich=prompt("资产，单位万")
 		var handsome=prompt("帅程度")
 		
-		
+		if(hight <0 || rich <0 || handsome<0|| isNaN(hight)||isNaN(rich)||isNaN(handsome)){
+			alert("啥？")
+		}else{
 		if(hight>=180 && rich>=1000 && handsome>=500){
 			alert("我一定要嫁给他")
 		}else if(hight>=180 || rich>=1000 || handsome>=500){
 			alert("嫁吧，比上不足，比下有余")
 		}else{
 			alert("不嫁!")
-		} 
+		} 	
+			
+		}
+		
+		
+		
+		
 		
 		
 		</script>
