@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script>
+		/* 
+		 Date:表达时间
+		 */
+		
+		var a=new Date();
+		
+		//日期格式：月/日/年 时:分:秒
+		var a2 =new Date("12/03/16 11:10:30")
+		
+		console.log(a2)
+		
+		// var a3=a2.getDate()//获取时间几日
+		// var a3=a2.getDay()//周几，0表示周日
+		// var a3=a2.getMonth()//返回月份，0表示1月
+		// var a3=a2.getFullYear()//获取年份
+		var a3=a2.getTime()//获取时间戳
+		//指从格林威治时间=1970年1月1日 0时0分0秒，到当前时间所花费毫秒数（1秒=1000毫秒）
+		console.log(a3);
+		
+	      var	time=Date.now();
+	
+	for(var i=0;i<100;i++){console.log(i)}
+	
+	
+		var	time2=Date.now();
+		console.log(time2-time);//毫秒
+	</script>
+	</head>
+	<body>
+	</body>
+</html>

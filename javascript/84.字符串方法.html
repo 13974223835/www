@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script>
+		/* 
+		 底层字符串是以字符数的形式保存的
+		  ["H","2","2"]
+		 */
+		
+		var str ="hello Atguigui"
+		
+		console.log(str[0])
+		//长度属性
+		console.log(str.length)
+		//chatAt[],索引
+		console.log(str.charAt(0))
+		//chatCodeAt[],获取指定位置Unicode编码
+		console.log(str.charCodeAt(0))
+	    //String.formCharCode()  根据字符编码获取字符 0x表示16
+		console.log(String.fromCharCode(20015))
+		//concat() 连接两个字符串
+		console.log(str.concat("##########"))
+		//indexof() 检索一个字符串中是否含有指定内容，返回第一次出现的索引，
+		//没有返回-1
+		console.log(str.indexOf("h",0))
+		//lastindexof() 往后检索
+		console.log(str.indexOf("h",0))
+		//slice()  截取指定内容，不影响原字符串,第一个开始，第二个参数结束不包含第二
+		console.log(str.slice(1,-1))//取反字符串
+		//substring() 和slice()类似，不同是这个不能接受负数，传递为负数默认为0
+		//第二小于第一时候，自动交换
+		console.log(str.substring(3,0))
+		//substr() 截取一样，但是反对使用
+		console.log(str.substr(0,2))
+		
+		 str ="hel,lo,At,gu,ig,ui"
+		//split() 将一个字符串拆分为一个数组
+		console.log(str.split(","))//拆分完变成数组
+		//toUpperCase(),将一个字符串转换大写
+		//toLowerCase(),小写
+		console.log(str.toUpperCase())
+		console.log(str.toLowerCase())
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

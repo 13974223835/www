@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script>
+		/* 
+		 使用字变量来创建正则表达式
+		  语法：var 变量 =/正则表达式/匹配模式
+		  
+		  
+		 */
+		
+	var	reg=/a/i;
+		console.log(typeof reg)
+		console.log(reg.test("asd"))
+		
+		reg=/a|b|q/i;
+	var	reg2=/[a-z]/i;//[]表示|
+	var	reg3=/[A-z]/;
+		console.log(reg2.test("w"))
+		
+		//任意字母含有abc，adc，afc
+		reg=/a[bdf]c/i;
+		console.log(reg.test("sss"))
+		//^除了
+		reg=/[^as]/
+		console.log(reg2.test("sss"))
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

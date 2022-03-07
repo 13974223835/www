@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		 <script>
+		 /* 
+		 正则表达式：
+		  
+		  邮件规则：
+		   前面可以是任意组合
+		   @
+		   后面也可以任意组合
+		   以.com结尾
+		   
+		   正则表达式用于定义一些字符串的规则，
+		   计算机可以根据正则表达式，
+		   来检查一个字符串是否符合规则，
+		   获取将字符串中符合规则的内容提取出来
+		   
+		   创建正则表达式对象：
+		   语法：var 变量=new RegExp("正则表达式","匹配规则")
+		    
+		    i:忽略大小写
+			g:全局匹配模式 
+		 */
+		 var reg=new RegExp("a","i")
+		 var str ="a";
+		 var result=reg.test(str)//只要有a就返回true
+		 console.log(result)
+		  
+		 
+		 
+		 </script>
+	</head>
+	<body>
+	</body>
+</html>

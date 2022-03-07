@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script>
+		/* 
+		 基本数据类型:
+		 引用数据类型：
+		 
+		 
+		 在JS为我们提供了三个包装类，通过三个包类将基本数据转化为对象
+		  String()
+		       基本转化为string对象
+		  Number()   
+			   基本转化为number对象
+		   Boolean()
+			   基本转化为boolean对象
+		
+		
+		不经常用，在做一些比较时候会发生不可方法
+		 */
+		
+		var num =new Number("hello")
+		var num2 =new Number("hello")
+		
+		console.log(typeof num)
+		console.log(num ==num2)
+		
+		var v= new Boolean(false)
+		//对象转换为布尔类型都是true 
+		  if(v){
+			 // alert("9999")
+			  
+		  }
+		  /* 
+		  方法和属性之能添加给对象，不能添加给基本数据类型
+		  当我们对一些基本数据类型的值去调用属性和方法时，
+		  浏览器会临时使用包装类将其转换为对象，然后在调用对象的属性和方法
+		  
+		  */
+		  var s=123;
+		  
+		  s=s.toString();
+		  console.log(s)
+		  console.log(typeof s)
+		 
+		 s=s.name="hello" 
+		 console.log(s.name)
+		  
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

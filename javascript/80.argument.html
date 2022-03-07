@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script>
+		/* 
+		 在调用函数时候，浏览器每次都会传递两个隐含参数
+		  1.函数上下文：this
+		  2.封装实参：arguments
+		    arguments是一个类数组对象，它可以通过索引来操作数据
+			调用函数时候，实参由它保存
+			arguments.length
+		  
+		    它有一个属性：callee
+			 这个属性对应一个函数对象，就是指向函数对象
+		  
+		 */
+		
+		function fun(){
+			// console.log(arguments instanceof Array)//判断是否数组
+			// console.log(Array.isArray(arguments))
+			
+			console.log(arguments.length)
+			console.log(arguments.callee ==fun)
+		}
+		
+		fun();
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

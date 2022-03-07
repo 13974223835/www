@@ -12,8 +12,9 @@
 		
 		function fun (){
 			//console.log("a="+a+"b="+b)
-			console.log(this.name)
+			console.log(this)
 		}
+		
 		var name="全局name"
 		//fun();
 		
@@ -21,9 +22,9 @@
 			name:"777",
 			sayname:fun
 		}
-		
-		// obj.sayname();//以object时候，this就是调用方法的那个对象
 		fun();//以函数调用，this显示window
+		 obj.sayname();//以object时候，this就是调用方法的那个对象
+		
 		</script>
 	</head>
 	<body>
