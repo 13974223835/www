@@ -25,17 +25,18 @@
 		 */
 		 
 		 
-		 function fun(){
-			 alert(this)
-		 }
-		 
-		 // function fun(a,b){
-		 // 			 console.log("a="+a)
-			// 		 console.log("b="+b)
+		 // function fun(){
+			//  alert(this)
 		 // }
 		 
-		 // fun.call(obj,1,2)
-		 // fun.apply(obj,[1,2])
+		 function fun(a,b){
+		 			 console.log("a="+a)
+					 console.log("b="+b)
+					 					 					 
+		 }
+		 
+		 fun.call(obj,1,2)
+		 fun.apply(obj,[1,2])
 		 
 		 var obj={name:"obj",
 		        syaName:function(){

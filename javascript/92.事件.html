@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<img src="js/事件.png" width="800" height="600"/>
+		<img src="js/dom文档.png" width="800" height="600"/>
+		<hr />
+		<br />
+		<!-- 事件就是用户交互行为 -->
+		<!-- <button id="btn" onclick="alert('你还点~~~');" >88888</button> -->
+		<!-- <button id="btn" onmousemove="alert('888')">88888</button> -->
+		<button id="btn" >88888</button>
+		
+		<script>
+		//获取按钮对象
+		var btn = document.getElementById("btn");
+		
+		/*
+		* 可以为按钮的对应事件绑定处理函数的形式来响应事件 
+		*/
+		//绑定一个单击事件
+		//响应单机绑定事件
+		btn.onclick = function(){
+		alert("你还点~~~");};
+		
+		</script>
+	</body>
+</html>

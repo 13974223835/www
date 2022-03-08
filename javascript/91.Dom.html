@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		
+	</head>
+	<body>
+		<img src="js/dom.png" width="800px" height="600px"/>
+		<img src="js/节点.png" width="800px" height="600px"/>
+		<img src="js/节点2.png" width="800px" height="600px"/>
+		<img src="js/节点3.png" width="800px" height="600px"/>
+		<br />
+		<hr />
+		<button id="btn"> 按钮。。。。s</button>
+		<script>
+		/*
+		*
+		浏览器已经为我们提供文档节点对象这个对象是window属性
+		*
+		可以在页面中直接使用，文档节点代表的是整个网页*/
+		console.log(document);
+		//获取到button对象
+		var btn = document.getElementById("btn")
+		//修改按钮的文字
+		btn.innerHTML = "I'm Button";
+		console.log(btn.innerHTML)
+		</script>
+	</body>
+</html>
