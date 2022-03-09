@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script>
+		
+		
+		window.onload = function(){
+			//获取body标签
+			var body = document.getElementsByTagName("body")[0];
+			
+		
+		/* 
+		 在document中有一个属性body，它保存的时body的引用
+		 */
+		// var body = document.body;
+		
+		/* 
+		 document.documentElement保存的时html的根标签
+		 */
+		var html = document.documentElement;
+		
+		// console.log(html);
+		
+		/* 
+		document.all代表页面中所有的元素 
+		 */
+		var all = document.all;
+		
+		 //console.log(all.length);
+		/* for(var i=0 ; i<all.length ; i++){
+			console.log(all[i]);
+			
+		} */
+		all = document.getElementsByTagName("*");
+		
+		console.log(all.length);
+		
+		/* 
+		根据元素的class属性值查询一组元素节点对象 
+		getElementsByClassName()可以根据class属性获取一组元素节点对象，但
+			是方法不支持IE及一下浏览器
+		 */
+		// var box1 = document.getElementsByClassName("box1");
+		
+		// console.log(box1.length);
+		
+		//获取页面中的所有的div
+		var divs = document.getElementsByTagName("div");
+		
+		console.log(divs.length);
+		
+		/* 
+		document.querySelector()
+			-需要一个选择器的字符串作为参数，可
+				以根据一个CSS选择器来查询一个元素节点对象
+			-虽然IE8中没有getElementsByClassName()
+				但是可以使用querySelector()代替
+			-使用该方法总会返回唯一的一个元素，如果满足条件的元素有多个，那么
+				它只会返回第一个
+		 */
+		var div = document.querySelector(".box1 div");
+		
+		var box1 = document.querySelector(".box1")
+		
+		//console.log(div.innerHTML);
+		console.log(box1);
+		
+		
+	/* 	document.querySelectorAll()
+			- 该方法和querySelector()用法类似，不同的是它会将符合条件的元素封装到一个数组中返回 
+			- 即使符合条件的元素之哟一个，它也会返回数组
+	*/		
+		
+		var box1 = document.querySelectorAll(".box1"); 
+		console.log(box1.length);
+		
+		
+		};
+		</script>
+	</head>
+	<body>
+	<div class="box1">
+		我是第一个box1
+		<div>我是box1中的di</div>
+	</div>
+	<div></div>
+	<div class="box1">
+		<div>我是box1中的di</div>
+	</div>
+	<div></div>
+	<div class="box1">
+		<div>我是box1中的di</div>
+	</div>
+	<div></div>
+	</body>
+</html>
