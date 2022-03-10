@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script>
+		window.onload=function(){
+		var a=document.getElementsByTagName("a")
+		for(var i=0;i<a.length;i++){
+			//点击那个，就是那个a
+			a[i].onclick=function(){
+				//获取父类的父类
+				var tr=this.parentNode.parentNode;
+				//提示窗口  ,tr.getElementsByTagName("td")[0].innerHTML    通过父类获取名称
+				var result =confirm("确认删除员工:"+tr.getElementsByTagName("td")[0].innerHTML)
+				if(result){
+					//删除
+				 tr.parentNode.removeChild(tr)
+				}
+				
+				
+					
+				/* 
+				 点击超链接以后，超链接会跳转页面，这个是超链接的默认行为，
+				 但是此时我们不希望出现默认行为，可以通过在响应函数的最后return false来取消默认行为
+				 */
+					return false;
+				} 
+				 
+				 
+				
+				 
+				 
+			 }
+			
+			
+		}
+		
+		
+		
+		</script>
+		
+		
+	</head>
+	<body>
+		<table id="employeeTable" align="center">
+			<tr>
+				<th>Name</th>
+				<th>Email</th>
+				<th>Salary</th>
+				<th>&nbsp;</th>
+			</tr>
+			<tr>
+				<td>Tom</td>
+				<td>tom@tom.com</td>
+				<td>5000</td>
+				<td><a href="deleteEmp7?id=001">Delete</a></td>
+			</tr>
+			<tr>
+				<td>Jerry</td>
+				<td>jerry@sohu.com</td>
+				<td>8000</td>
+				<td><a href="deleteEmp7?id=eO2">Delete</a></td>
+			</tr>
+
+
+
+			<table align="center">
+				<br />
+				<tr>
+					<td class="word">name:
+					</td>
+					<td class="inp">
+						<input type="text" name="empName id=" empName />
+					</td>
+				</tr>
+				<tr>
+					<td class="word">email: </td>
+					<td class="inp">
+						<input type="text" name="email" id="email" />
+					</td>
+				</tr>
+				<tr>
+					<td class=" word">salary:
+					</td>
+					<td class="inp">
+						<input type="text" name="salary" id="salary" />
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center">
+						<button id="addEmpButton" value="abc">
+							Submit
+						</button>
+					</td>
+				</tr>
+
+
+
+			</table>
+
+
+		</table>
+	</body>
+</html>
