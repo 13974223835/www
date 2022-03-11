@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>		
+		<style>
+		#info{
+		width: 200px;
+			height: 200px;
+			background-color: #00FFFF;
+			overflow: auto;
+		}
+		</style>
+		<script>
+		/* 
+		 使用垂直到底，按钮可用
+		 */
+		window.onload=function(){
+			//onscroll 该事件会在滚动跳滚动触发
+			var info=document.getElementById("info")
+			
+			var inputs=document.getElementsByTagName("input")
+			info.onscroll=function(){
+				//检查滚动条是否到底
+				if(info.scrollHeight -info.scrollTop==info.clientHeight){
+					//
+					// alert("sss")
+					//重新赋值属性
+					/* 
+					 disabled属性可以设置一个元素是否禁用，
+					 如果设置为true，则元素禁用
+					 如果设置为false,则元素可用
+					 */
+					inputs[0].disabled=false;
+					inputs[1].disabled=false;
+				}
+			}
+		}
+		
+		</script>
+	</head>
+	<body>
+		<h1>注册</h1>
+		<p id="info">
+			通过对该视频的学习，可以使同学初步掌握JavaScript，对面向对象的语言有一个初步的理解。
+			并且能够通过DOM和BOM完成一项基本的页面效果。
+			JavaScript的基础对于一名前端工程师非常重要，希望同学们认真学习。JavaScript高级进阶教程：BV14s411E7qf。
+			通过对该视频的学习，可以使同学初步掌握JavaScript，对面向对象的语言有一个初步的理解。
+			并且能够通过DOM和BOM完成一项基本的页面效果。
+			JavaScript的基础对于一名前端工程师非常重要，希望同学们认真学习。JavaScript高级进阶教程：BV14s411E7qf。
+			通过对该视频的学习，可以使同学初步掌握JavaScript，对面向对象的语言有一个初步的理解。
+			并且能够通过DOM和BOM完成一项基本的页面效果。
+			JavaScript的基础对于一名前端工程师非常重要，希望同学们认真学习。JavaScript高级进阶教程：BV14s411E7qf。
+			通过对该视频的学习，可以使同学初步掌握JavaScript，对面向对象的语言有一个初步的理解。
+			并且能够通过DOM和BOM完成一项基本的页面效果。
+			JavaScript的基础对于一名前端工程师非常重要，希望同学们认真学习。JavaScript高级进阶教程：BV14s411E7qf。
+			通过对该视频的学习，可以使同学初步掌握JavaScript，对面向对象的语言有一个初步的理解。
+			并且能够通过DOM和BOM完成一项基本的页面效果。
+			JavaScript的基础对于一名前端工程师非常重要，希望同学们认真学习。JavaScript高级进阶教程：BV14s411E7qf。
+			通过对该视频的学习，可以使同学初步掌握JavaScript，对面向对象的语言有一个初步的理解。
+			并且能够通过DOM和BOM完成一项基本的页面效果。
+			JavaScript的基础对于一名前端工程师非常重要，希望同学们认真学习。JavaScript高级进阶教程：BV14s411E7qf。
+			通过对该视频的学习，可以使同学初步掌握JavaScript，对面向对象的语言有一个初步的理解。
+			并且能够通过DOM和BOM完成一项基本的页面效果。
+			JavaScript的基础对于一名前端工程师非常重要，希望同学们认真学习。JavaScript高级进阶教程：BV14s411E7qf。
+			通过对该视频的学习，可以使同学初步掌握JavaScript，对面向对象的语言有一个初步的理解。
+			并且能够通过DOM和BOM完成一项基本的页面效果。
+			JavaScript的基础对于一名前端工程师非常重要，希望同学们认真学习。JavaScript高级进阶教程：BV14s411E7qf。
+			通过对该视频的学习，可以使同学初步掌握JavaScript，对面向对象的语言有一个初步的理解。
+			并且能够通过DOM和BOM完成一项基本的页面效果。
+			JavaScript的基础对于一名前端工程师非常重要，希望同学们认真学习。JavaScript高级进阶教程：BV14s411E7qf。
+			通过对该视频的学习，可以使同学初步掌握JavaScript，对面向对象的语言有一个初步的理解。
+			并且能够通过DOM和BOM完成一项基本的页面效果。
+			JavaScript的基础对于一名前端工程师非常重要，希望同学们认真学习。JavaScript高级进阶教程：BV14s411E7qf。
+		</p>
+       <input type="checkbox"  disabled="disabled"/>我已同意
+      <input type="submit" value="注册"  disabled="disabled"/>
+	</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+		#box{
+			width: 100px;
+			height: 100px;
+			background-color: #FF0000;
+			/* 
+			 开启绝对定位
+			 */
+			position:absolute;
+		}
+		
+		</style>
+		<script>
+		window.onload=function(){
+			var box=document.getElementById("box")
+			window.onmousemove=function(event){
+				
+				//解决兼容问题
+				event=event||window.event
+				
+				/* 
+				 
+				 //获取滚动条滚动的距离
+				 chrome认为浏览器的滚动条是body的，可以通过body.scrollTop来获取
+				 火狐等浏览器认为浏览器的滚动条是html的，
+				 				 var st = document.documentElement.scrollTop;
+				 */
+				var st = document.body.scrollTop || document.documentElement.scrollTop;
+				var sl = document.body.scrollLeft || document.documentElement.scrollLeft;
+				
+				/* 
+				 clientX和clientY
+				 用于获取鼠标在当前的可见窗口的坐标
+				 div的偏移量，是相对于整个页面的
+				 
+				 pageX和pageY可以获取全部页面的 IE8不支持
+				 */
+				var left=event.clientX
+				var top=event.clientY
+				
+				// var left=event.pageX
+				// var top=event.pageY
+				
+				
+				
+				box.style.left=left+sl +"px";
+				box.style.top=top +st+"px";
+			}
+			
+		}
+		</script>
+		
+	</head>
+	<body style="height: 1000px;"   style="width: 2000px;">
+		<div id="box"></div>
+	</body>
+</html>

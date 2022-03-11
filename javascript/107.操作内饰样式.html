@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+		#box{
+			background-color: red ;/* !important */
+			width: 200px;
+			height: 200px;
+		}
+		
+		</style>
+		<script>
+		window.onload=function(){
+			
+			var btn=document.getElementById("btn")
+			btn.onclick=function(){
+				/* 
+				 通过JS修改元素的样式：
+				 语法：元素.style.样式名= 样式值
+				 注意：如果CSS的样式名中含有一，
+				            这种名称在JS中是不合法的比如background-color
+				             需要将这种样式名修改为驼峰命名法，
+				             去掉-，然后将-后的字母大写
+				 
+				 我们通过style属性设置的样式都是内联样式,
+				 而内联样式有较高的优先级，所以通过了S修改的样式往往会立即显示
+				 
+				 但是如果在样式中写了！important，则此时样式会有最高的优先级，
+				 即使通过了S也不能覆盖该样式，此时将会导致了S修改样式失效
+				 所以尽量不要为样式添加！important
+				 */
+				var box=document.getElementById("box")
+				box.style.width="500px"
+				box.style.height="500px"
+				box.style.backgroundColor="green"				
+			}
+			
+		
+		var btn1=document.getElementById("btn1")
+		 btn1.onclick=function(){			 
+			 /* 
+			 //读取box1的样式
+			 语法：元素.style.样式名
+			 通过style屈性设置和读取的都是内联样式
+			 无法读取样式表中的样式
+			 */
+			var box=document.getElementById("box")
+			 alert(box.style.width)
+		 }
+		
+			
+		}
+		
+		
+		</script>
+		
+		
+	</head>
+	<body>
+		<button id="btn">ssss</button>
+		<button id="btn1">tttt</button>
+		<br />
+		<br />
+		<div id="box" > </div>
+	</body>
+</html>
