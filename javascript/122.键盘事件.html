@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+		
+		</style>
+		<script>
+		/* 
+		 键盘事件：
+		 onkeydown 按住会一直触发
+		 按键被按下
+		 onkeyup
+		 按键被松开
+		 健盘事件一般都会绑定给一些可以获取到焦点的对象
+		 
+		 可以通过keyCode来获取按键的编码
+		 通过它可以判断哪个按键被按下
+		 除了keyCode，事件对象中还提供了几个属性
+		 altKey
+		 ctrlKey
+		 shiftKey
+		 这个三个用来判断alt ctrl 和shift是否被按下
+		 如果按下则返回true，否则返回false
+		 
+		 */
+		window.onload=function(){
+			document.onkeydown=function(event){
+			event=event||window.event
+			
+		// 	if(event.keyCode==89){
+		// 		alert("y被按下了")
+		// 	}
+			
+		}
+			var input =document.getElementsByTagName("input")[0]
+			   input.onkeydown=function(event){
+				   /* 				   
+				   //数字48-57
+				   //使文本框中不能输入数字
+				   */
+				   if(event.keyCode>=48&&event.keyCode<=57){
+					   //在文本框中输入内容，属于onkeydown的默认行为
+                       //如果在onkeydown中取消了默认行为，则输入的内容，不会出现在文本框中
+					   return false
+				   }
+				   
+			   }
+			
+			
+			
+			
+		}
+		
+		
+		</script>
+	</head>
+	<body>
+		<input id="input" />
+	</body>
+</html>
