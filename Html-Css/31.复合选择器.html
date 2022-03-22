@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		
+		<style>
+		/* 
+		 交集选择器
+		 作用：选中同时复合多个条件的元素
+		 语法：选择器1选择器2选择器3选择器n{}
+		 */
+		div.div{
+			background-color: red;
+			font-size: 30px;
+		}
+		/* 
+		 选择器分组（并集选择器
+		 作用：同时选择多个选择器对应的元素
+		 语法：选择器1，选择器2，选择器3，选择器n{}
+		 */
+		h1,span{
+			background-color: #0000FF;
+		}
+		
+		</style>
+	</head>
+	<body>
+		<div class="div">我是div</div>
+		<p class="div">我是p</p>
+		<h1>h1</h1>
+		<span>span</span>
+	</body>
+</html>

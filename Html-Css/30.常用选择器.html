@@ -4,6 +4,65 @@
 		<meta charset="utf-8">
 		<title></title>
 	</head>
+	<style>
+	
+	/* 
+	 通配选择器
+	 作用：选中页面中的所有元素
+	 语法：*
+	 */
+	*{
+		/* background-color: black; */
+	}
+	
+	h1{
+		background-color: aquamarine;
+	}
+	p{background-color: aliceblue;}
+	
+	
+	
+	
+		 /* id选择器
+		 作用：根据元素的id属性值选中一个元素
+		 语法：#id属性值{} */
+	#ssss{
+		background-color: gray;
+	}
+	
+	
+	/* 
+	 类选择器
+	 作用：根据元素的c1ass属性值选中一组元素
+	 语法：.class属性值
+	 */
+	.blue{
+		background-color: blue;
+	}
+	.red{
+		background-color: black;
+	}
+	
+	</style>
 	<body>
+		<!-- 
+		 将所有的段落设置为红色（字体）
+		 元素选择器
+		 作用：根据标签名来选中指定的元素
+		 语法：标签名}
+		 例子：p{) h1{} div{}
+		 
+
+		 -->
+		 <h1>标签</h1>
+		 <p>111</p>
+		 <p id="ssss">222</p>
+		 <!-- class是一个标签的属性，它和id类似，不同的是c1ass可以重复使用 
+		 可以通过class.属性来为元素分组
+		 可以同时为一个元素指定多个class,属性
+		 -->
+		 <p class="blue red" >333</p>
+		 <p class="blue">444</p>
+		 <p>555</p>
 	</body>
 </html>
