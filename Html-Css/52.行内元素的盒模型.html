@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+		.s1{
+			/* 
+			 
+			 行内元素的盒模型
+			 -行内元素不支持设置宽度和高度
+			 -行内元素可以设置padding,但是垂直方向padding不会影响页面的布局
+			 -行内元素可以设置porder,垂直方向的border不会影响页面的布局
+			 -行内元素可以设置margin,垂直方向的margin不会影响布局*/
+			width: 100px;;
+			height: 100px;
+			background-color: yellow;
+			/* padding: 10px; */
+			/* border: 10px #000000 solid; */
+			/* margin: 100px; */
+			/* display: inline-block; */
+		}
+		
+		.qq{
+			/* 
+		display用来设置元素显示的类型
+			 可选值：
+			 inline将元素设置为行内元素
+			 block将元素设置为块元素
+			 inline-block将元素设置为行内块元素
+			    行内块，既可以设置宽度和高度又不会独占一行
+			table将元素设置为一个表格
+			none元素不在页面中显示
+		visibility用来设置元素的显示状态
+		 可选值：
+		  visible 默认值，元素在页面中正常显示
+		  hidden 
+		     元素在页面中隐藏不显示
+			 */
+			/* display: block; */
+			/* display: inline-block; */
+			/* display: none; */
+			/* visibility: hidden; */
+			width: 100px;;
+			height: 100px;
+			background-color: red;
+			
+		}
+		.box{
+			/* display: inline; */
+			width: 100px;;
+			height: 100px;
+			background-color: saddlebrown;
+		}
+		</style>
+	</head>
+	<body>
+		<span class="s1">span</span>
+		<span class="qq">span2222</span>
+		<div class="box">11</div>
+	</body>
+</html>

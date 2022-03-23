@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+		body{
+			background-color: #00FFFF;
+		}
+		.left-nav{
+			width: 190px;
+			height: 450px;
+			padding: 10px;
+			background-color: #fefefe;
+			margin: 50px auto;
+		}
+		
+		.left-nav .item{
+			height: 25px;
+			/* 要让一个文字在父元素中垂直居中，只需将父元素的line-height设置为一个和父元素一样的值就行 */
+			line-height: 25px;
+			padding-left: 18px;
+		}
+		.item:hover{
+			background-color: #b9b9b9;
+		}
+		
+		.item a{
+			font-size: 14px;
+			color: #333;
+			/* 去除下划线 */
+			text-decoration: none;
+		}
+		.item a:hover{
+			color: #c81623;
+		}
+		
+		span{
+			padding: 0.5px;
+			font-size: 12px;
+		}
+		</style>
+	</head>
+	<body>
+		<!-- 创建一个外部的容器nav(div)div(div)ul(li) -->
+		<nav class="left-nav">
+			<div class="item">
+				<a href="#">家用电器</a>								
+			</div>
+			<div class="item">
+				<a href="#">手机</a>
+				<span>/</span>
+				<a href="#">运营商</a>
+				<span>/</span>
+				<a href="#">数码</a>
+			</div>
+			<div class="item">
+				<a href="#">电脑</a>
+				<span>/</span>
+				<a href="#">办工</a>				
+			</div>
+			<div class="item">
+				<a href="#">家居</a>
+				<span>/</span>
+				<a href="#">家具</a>
+				<span>/</span>
+				<a href="#">家装</a>		
+				<span>/</span>
+				<a href="#">厨具</a>			
+			</div>
+			
+		</nav>
+	</body>
+</html>

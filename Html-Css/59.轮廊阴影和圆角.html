@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+		.box{
+		width: 100px;	
+		height: 100px;
+		background-color: #0000FF;
+	    /* box-shadow用来设置元素的阴景影效果，阴影不会景影响页面布局
+		第一个值水平偏移量设置阴影的水平位置正值向右移动 负值向左移动
+		第二个值垂直偏移量设置阴影的水平位置正值向下移动 负值向上移动
+		第三个值阴影的模糊半径
+		第四个值阴影的颜色
+		*/
+		box-shadow:10px 10px 10px sienna ;
+		
+		/* border-radius:用来设置圆角圆角设置的圆的半径大小 
+		  border-top-left-radius
+		  border-top-right-radius 
+		  border-bottom-left-radius
+		  border-bottom-right-radius
+		
+		    border-radius可以分别指定四个角的圆角
+		    四个值左上右上右下左下
+		    三个值左上右上/左下右下
+		    两个个值左上/右下右上/左下
+		*/
+		/* border-radius: 40px; */
+		border-radius: 10px 20px 30px 40px;
+		/* border-radius: 50%; */
+		}
+		.box:hover{
+		/* 
+		 outline用来设置元素的轮廓线，用法和border-一模一样
+		 轮廓和边框不同的点，就是轮廓不会影响到可见框的大小
+		 */
+		outline:10px #00FFFF solid;	
+			
+		}
+		</style>
+	</head>
+	<body>
+		<div class="box"></div>
+	</body>
+</html>
