@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+   <style>
+       *{
+           margin: 0;
+           padding: 0;
+       }
+       .nav{
+           width: 1210px;
+           height: 48px;
+           background-color: #e8e7e3;
+           list-style: none;
+           margin: 100px auto;
+       }
+       .nav li{
+            float: left;
+
+            /* 将文字在父元素中垂直居中 */
+            line-height: 48px;
+       }
+       .nav a{
+            /*将a转换为块元素 */
+            display: block;
+            /* 去除下划线 */
+            text-decoration:  none;
+            /* 设置字体大小 */
+            color: #777777;
+
+            font-size: 18px;
+
+            padding: 0 39px;
+       }
+       .nav li:last-child a{
+           padding: 0 42px 0 56px;
+       }
+       .nav a:hover{
+           background-color: #3F3F3F;
+           color: #e8e7e3;
+       }
+   </style>
+</head>
+<body>
+    <ul class="nav">
+        <li>
+            <a href="#">HTML/CSS</a>
+        </li>
+        <li>
+            <a href="#">Browser Side</a>
+        </li>
+        <li>
+            <a href="#">Server Side</a>
+        </li>
+        <li>
+            <a href="#">Proramming</a>
+        </li>
+        <li>
+            <a href="#">XML</a>
+        </li>
+        <li>
+            <a href="#">Web Building</a>
+        </li>
+        <li>
+            <a href="#">Reference</a>
+        </li>
+    </ul>
+</body>
+</html>
