@@ -1,0 +1,44 @@
+{
+  "id": "3276334",
+  "name": "999",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "28447857",
+      "name": "擦除",
+      "font_class": "cachu",
+      "unicode": "e641",
+      "unicode_decimal": 58945
+    },
+    {
+      "icon_id": "28447858",
+      "name": "标准板式",
+      "font_class": "biaozhunbanshi",
+      "unicode": "e642",
+      "unicode_decimal": 58946
+    },
+    {
+      "icon_id": "28447859",
+      "name": "编辑图片",
+      "font_class": "bianjitupian",
+      "unicode": "e643",
+      "unicode_decimal": 58947
+    },
+    {
+      "icon_id": "28447860",
+      "name": "插入图片",
+      "font_class": "charutupian",
+      "unicode": "e644",
+      "unicode_decimal": 58948
+    },
+    {
+      "icon_id": "28447861",
+      "name": "登记表格",
+      "font_class": "dengjibiaoge",
+      "unicode": "e645",
+      "unicode_decimal": 58949
+    }
+  ]
+}
