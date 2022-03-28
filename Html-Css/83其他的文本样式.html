@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .box1{
+            font-size: 50px;
+            font-family: 微软雅黑;
+            /* 
+                text-decoration 设置文本修饰（属于新的语法IE会不兼容）
+                    可选值:
+                        none 什么都没有
+                        underline下划线
+                        line-through删除线
+                        overline上划线
+            */
+            /* text-decoration: overline red dotted; */
+        }
+        .box2{
+            width: 300px;
+            /* 
+                white-space设置网页如何处理空白
+                    可选值：
+                        normal 正常
+                        nowrap 不换行
+                        pre保留空白
+            */
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box2">
+        It was born in jutland and the Rhine River basin, and spread to all parts of the world through British colonial active communication. Later, it became an international language because of the world leading position in economy, military affairs and politics of Britain and the United States.
+    </div>
+    <div class="box1">今天天气真不错</div>
+</body>
+</html>
