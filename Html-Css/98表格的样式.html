@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        table{
+            width: 50%;
+            border: 1px solid black;
+            margin: 0 auto;
+            /* border-spacing:指定边框之间的距离 */
+            /* border-spacing:0px */
+            /* border-collapse: collapse;设置边框的合并 */
+            border-collapse: collapse;
+        }
+        td{
+            border: 1px solid black;
+            height: 100px;
+            /* 默认情况下元素在td中是垂直居中的  可以通过vertical-align 来修改 */
+            vertical-align: middle;
+            text-align: center;
+        }
+        /* 
+            如果表格中没有使用tbody而是直接使用tr
+                那么浏览器会自动创建一个tbody，并且将tr全都放到tbody中
+        */
+        tbody > tr:nth-child(odd){
+            background-color:aquamarine
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>学号</td>
+            <td>性别</td>
+            <td>年龄</td>
+            <td>名字</td>
+            <td>地址</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>男</td>
+            <td>11</td>
+            <td>孙悟空</td>
+            <td>花果山</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>男</td>
+            <td>22</td>
+            <td>猪八戒</td>
+            <td>高老庄</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>男</td>
+            <td>33</td>
+            <td>唐僧</td>
+            <td>天庭</td>
+        </tr>
+        
+    </table>
+</body>
+</html>

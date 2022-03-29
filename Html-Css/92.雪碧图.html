@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+		a:link{
+			display: block;
+			width: 70px;
+			height: 80px;
+			background-image: url("img/轮播图/8.jpg");
+			background-repeat: repeat-x;
+			/* background-size: contain; */
+		}
+		a:hover{
+			/* background-image: url("img/轮播图/8.jpg"); */
+			background-position: -70px 0;
+		}
+		a:active{
+			/* background-image: url("img/轮播图/8.jpg"); */
+			background-position: -130px 0;
+		}
+		/* 
+		 图片属于网页中的外部资源，外部资源都需要浏览器单独发送请求加载
+		 浏览器加载外部资源时是按需加载的，用则加载，不用则不加载
+		 像我们上边的练，习1ink会首先加载，而hoveri和active会在指定状态触发时才会加载
+		 */
+		
+		/* 
+		 雪碧图的使用步骤：
+		 1.先确定要使用的图标
+		 2.测量图标的大小
+		 3.根据测量结果创建一个元素
+		 4.将雪碧图设置为元素的背景图片
+		 5.设置一个偏移量以显示正确的图片
+		 雪碧图的特点：
+		 一次性将多个图片加载进页面，降低请求的次数，加快访问速度，提升用户的体脸
+		 */
+		</style>
+	</head>
+	<body>
+		<a href="javascript:"></a>
+	</body>
+</html>

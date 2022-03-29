@@ -1,0 +1,46 @@
+/* 主页index.html */
+
+.topbar-wrapper{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	background-color: #333;;
+}
+
+.service ,.topbar li{
+	float: left;
+}
+
+.shop-cart, .user-info{
+	float: right;
+}
+.shop-cart{
+	margin-left:25px;
+}
+/* 超链接a */
+.topbar a{
+	font-size: 12px;
+	color: #b0b0b0;
+	display: block;
+}
+.topbar a:hover{
+	color: white;
+}
+/* 设置线的颜色 */
+.topbar .line{
+	font-size: 12px;
+	color: #424242;
+	margin: 0 8px;
+}
+.shop-cart a{
+	width:110px ;
+	background-color: #424242;
+	text-align: center;
+}
+.shop-cart:hover a{
+	background-color: #fff;
+	color: #FF6700;
+}
+.shop-cart i{
+	margin-right: 2px;
+}
