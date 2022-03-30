@@ -44,3 +44,222 @@
 .shop-cart i{
 	margin-right: 2px;
 }
+.app{
+	position: relative;
+}
+/* 小三角 */
+.app::after{
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	display: none;
+	border: 8px solid transparent;
+	border-top: none;
+	border-bottom-color :#fff ;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	margin: auto;
+}
+/* 让二维码和小三角绑定hover */
+.app:hover .qrcode,
+.app:hover::after{
+	display: block;
+	height:148px ;
+}
+/* 二维码 */
+.app .qrcode{
+	/* display: none; */
+	height: 0;
+	overflow: hidden;
+	position: absolute;
+	width: 124px;
+	/* height: 148px; */
+	left: -40px;
+	line-height: 1;
+    text-align: center;
+	background-color: #fff;
+	box-shadow: 0 0 10px rgba(0, 0,0,.3);
+  /* 动画过渡效果 */
+    transition: height 1s;
+	
+}
+/* 二维码链接 */
+.app .qrcode img{
+	width: 90px;
+	margin: 17px;
+}
+/* 二维码文字 */
+.app .qrcode span{
+	font-size: 14px;
+	color: #000;
+}
+/*  */
+.header{
+	height: 100px;
+   /* background-color: #bfa; */
+
+}
+.header .logo{
+	float: left;
+	margin-top: 22px;	
+	position: relative;
+	width: 55px;
+	height: 55px;
+	overflow: hidden;
+/* 隐藏 图标文字*/
+	text-indent: -9999px;
+
+}
+.header .logo a{
+    position: absolute;
+	width: 55px;
+	height: 55px;
+	
+
+	background-color: #ff6700;
+	background-image: url("../img/小米.png");
+	background-position: center;
+	background-size: contain;
+	left: 0;
+	transition: left 0.3s;
+}
+.header .logo .home{
+	left: -55px;
+	background-image: url("../img/小米.png");
+}
+/* 设置鼠标 */
+.header .logo:hover .mi{
+	left: 55px;
+}
+.header .logo:hover .home{
+	left: 0;
+}
+
+/* 设置中间导航条 */
+.header .nav-wrapper {
+	float: left;
+}
+.nav> li{
+	float: left;
+}
+/* 设置左侧导航条 */
+.left-menu{
+	width: 234px;
+	height: 460px;
+	padding: 20px 0;
+	background-color: rgba(0, 0,0,.6);
+	position: absolute;
+	z-index: 999;
+	left: -120px;
+	line-height: 1;
+}
+ ul.left-menu li a{
+	display: block;
+	height: 42px;
+	line-height: 42px;
+	color: white;
+	margin-right: 0;
+	padding: 0 30px;
+	font-size: 14px;
+}
+ul.left-menu li a:hover{
+	color: white;
+	background-color: #ff6700;
+}
+.left-menu a i{
+	float: right;
+	line-height: 42px;
+	font-size: 20px;
+}
+.all-goods-wrapper{
+	position: relative;
+	/* background-color: red; */
+}
+.header .nav{
+	/* width: 850px; */
+	/* background-color: #bfa; */
+	height: 100px;
+	line-height: 100px;
+	padding-left: 58px;
+}
+.nav-wrapper li a{
+	display: block;
+	font-size: 16px;
+	margin-right: 20px;
+}
+.nav-wrapper li a:hover{
+	color:#ff6700;
+}
+/* 隐藏全部商品 */
+.all-goods{
+	visibility: hidden ;
+}
+
+.header-wrapper{
+	position: relative;
+}
+.nav .goods-info{
+	/* height: 228px; */
+	height: 0;
+	width: 100%;
+	/* background-color: #bfa; */
+	/* border-top: 1px solid rgb(224, 224, 224);
+	box-shadow: 0 5px 3px rgba(0,0,0,.2); */
+    position: absolute;
+	top: 100px;
+	left: 0;
+	transition: height 0.3s;
+	z-index: 9999;
+}
+/* 弹出选择框 */
+.nav .show-goods:hover ~ .goods-info,
+  .goods-info:hover {
+      height: 228px;
+    border-top: 1px solid rgb(224, 224, 224);
+	box-shadow: 0 5px 3px rgba(0,0,0,.2);
+}
+/* 搜索框容器 */
+.search-wrapper{
+     width: 296px;
+	 height: 50px;
+	 float: right;
+	 /* background-color: red; */
+	 /* border: 1px solid rgb(224, 224, 224); */
+	 margin-top: 25px;
+}
+.search-wrapper .search-inp{
+	box-sizing: border-box;
+	float: left;
+	width: 244px;
+	border: none;
+	padding: 0 10px;
+	height: 50px;
+	font-size: 16px;
+    border: 1px solid rgb(224, 224, 224);
+	outline: none;
+}
+.search-wrapper .search-inp:focus,.search-wrapper .search-inp:focus +button{
+	/* outline: 1px solid red; */
+	border-color: #ff6700;
+}
+
+.search-wrapper .search-btn{
+	float: left;
+	height: 50px;
+	width: 52px;
+	padding: 0;
+	border: none;
+	background-color: #fff;
+	color: #616161;
+	font-size: 16px;
+	border: 1px solid rgb(224, 224, 224);
+	border-left: none;
+	
+}
+.search-wrapper .search-btn:hover{
+	border: none;
+	background-color:#ff6700 ;
+	color: white;
+}

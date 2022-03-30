@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 117px;
+            height: 119px;
+            margin: 0 auto;
+            background-image: url('./img11/7.png');
+            animation: run 2s steps(6);
+        }
+        /* 创建关键帧 */
+        @keyframes run{
+            from{
+                background-position:0 0;
+            }
+
+            to{
+                background-position: -703px 0;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+</body>
+</html>

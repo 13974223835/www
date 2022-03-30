@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        html{
+            perspective: 800px;
+        }
+        body{
+            border: 1px red solid; 
+            background-color: rgb(241，241，241); 
+        }
+        .box1{
+            width:200px; height:200px;
+            background-color: #bfa; 
+            margin: 200px auto;
+            transition:2s;
+        }
+        body:hover .box1{
+            /*
+            通过旋转可以使元素沿着xy或z旋转指定的角度
+                rotateX() rotateY() rotatez()
+            */
+            /* transform: rotateZ(.25turn);*/
+            transform: rotateY(45deg) translateZ(100px);
+            /* 是否显示元素的背面 */
+            backface-visibility: hidden;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+</body>
+</html>
