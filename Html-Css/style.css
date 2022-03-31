@@ -1,4 +1,30 @@
-p{
-    color: black;
-    font-size: 100px;
-};
+/*
+    css中的注释，内容会被解析到css文件中
+*/
+body {
+  background-color: black;
+}
+body .box2 {
+  background-color: aquamarine;
+}
+body .box2 .box3 {
+  background-color: blanchedalmond;
+}
+body .box4 {
+  background-color: darkorange;
+}
+.box5 {
+  width: 200px;
+  color: red;
+}
+。box6 {
+  width: 200px;
+  background-color: url("box6/1.png");
+}
+div {
+  width: 115px;
+  height: 444px;
+}
+div {
+  width: 300px;
+}
